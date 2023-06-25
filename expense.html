@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Expense app</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Expense App</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add Expense</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price">
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <input type="text" id="description" name="description">
+        </div>
+        <div >
+          <label for="category">Category:</label>
+          <select class="dropdown"  id="category" name="category">
+            <option value="movie">Movie</option>
+            <option value="trip">Trip</option>
+            <option value="food">Food</option>
+          </select>
+        </div>
+        <input id="btn" type="submit" value="Submit" class="addExpense">
+      </form>
+
+      <ul id="expense"></ul>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script> 
+    <script src="../public/js/index.js"></script>
+  </body>
+</html>
